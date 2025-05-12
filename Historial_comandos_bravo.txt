@@ -1,0 +1,83 @@
+cat /proc/cpuinfo
+cat /proc/meminfo
+ssh-keygen -t ed25519
+cat $HOME/.ssh/*.pub
+cd
+mkdir repogit
+ll
+cd repogit
+git clone git@github.com:JuanManuelBravo/TP1_AySO_Bravo_JuanManuel.git
+sudo apt install git
+git clone git@github.com:JuanManuelBravo/TP1_AySO_Bravo_JuanManuel.git
+cd TP1_AySO_Bravo_JuanManuel/
+pwd
+ls -l
+cat /etc/os-release 
+man grep
+grep HOME_URL /etc/os-release 
+man grep
+grep -i Home_url /etc/os-release 
+grep -i Home_url /etc/os-release > datos_url.txt
+ls
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls
+git add .
+git config --global user.email "juanmanuelbravo8@gmail.com"
+git config --global user.name "Juanma"
+git commit -m "Add: agregado 1er ejercicio sobre datos_usuarios.txt"
+git status
+git push
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuarios.txt
+git add datos_usuarios.txt 
+git commit -m "Añadiendo informacion de CPU"
+git push
+ll
+cd repogit
+ll
+cd TP1_AySO_Bravo_JuanManuel/
+LL
+ll
+cat <<EOF >> README.md
+Alumno: Juan Manuel
+Division:115
+Turno:Manana
+EOF
+
+git add README.md datos_usuarios.txt
+git commit -m "Add anadiendo readme y datos de usuarios"
+git push
+mkdir -p ~/materia{1,2}/uni{1,2,3}
+ll
+cd
+ll
+tree ~/material ~/materia2
+sudo apt install tree
+tree ~/material ~/materia2
+tree ~/materia1 ~/materia2
+nano script_dir.sh
+chmod +x script_dir.sh 
+/script_dir.sh
+chmod +x script_dir.sh
+/script_dir.sh
+ll
+git add .
+/script_dir.sh
+ll
+./script_dir.sh 
+git add .
+git commit -m"ADD: añadiendo script"
+git commit -m "ADD: añadiendo script"
+git push
+cd repogit/
+ll
+cd TP1_AySO_Bravo_JuanManuel/
+ll
+./script_dir.sh 
+history -a
+ll
+git add .
+git status
+git commit -m "añadiendo script"
+git push
+history -a
